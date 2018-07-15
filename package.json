@@ -1,0 +1,21 @@
+{
+  "name": "theme_export__avokween-com-brooklyn__15jul2018-0138am",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "slate watch",
+    "start:dev": "slate start --env development",
+    "start:prod": "slate start --env production",
+    "deploy:dev": "slate deploy --env development",
+    "deploy:prod": "slate deploy --env production",
+    "build": "slate build"
+  },
+  "author": "Eric",
+  "license": "ISC",
+  "description": "Shopify Theme for Kween",
+  "dependencies": {
+    "@shopify/slate": "^0.14.0",
+    "yarn": "^1.7.0"
+  }
+}
