@@ -50,9 +50,6 @@
 	"expanded_folders":
 	[
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am",
-		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets",
-		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/config",
-		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/layout",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/config",
@@ -61,9 +58,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/theme.scss",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/sections/header.liquid",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets/theme.js",
-		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/theme.scss",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/timber.scss.liquid",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/timber.scss",
 		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/dist/layout/theme.liquid",
@@ -115,6 +112,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hr ",
+			"hr",
 			".site-nav",
 			"/*=",
 			"12px",
@@ -240,9 +239,7 @@
 			" grid--table",
 			"grid--full ",
 			"grid--full grid--table",
-			"endcomment",
-			"{% endcom",
-			"{% endcome"
+			"endcomment"
 		],
 		"highlight": true,
 		"in_selection": false,
