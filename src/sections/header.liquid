@@ -69,7 +69,7 @@
                 </button>
               </div>
             </div>
-            <nav class="grid__item large--four-tenths large--text-left medium-down--hide" role="navigation">
+            <nav class="grid__item large--five-twelfths large--text-left medium-down--hide" role="navigation">
               {% comment %}
                 List out your main-menu linklist (default)
 
@@ -77,7 +77,7 @@
                   - http://docs.shopify.com/themes/liquid-variables/linklists
               {% endcomment %}
               <!-- begin site-nav -->
-              <ul class="site-nav" id="AccessibleNav">
+              <ul class=" site-nav-main" id="AccessibleNav"><!-- removed site-nav class -->
                 {% for link in linklists[section.settings.main_menu_link_list].links %}
                   {% if link.links != blank %}
                   {% assign parent_index = forloop.index %}
@@ -98,7 +98,8 @@
                       <ul
                         id="MenuParent-{{ parent_index }}"
                         class="site-nav__dropdown {% if link.levels == 2 %}site-nav--has-grandchildren{% endif %}"
-                        data-meganav-dropdown>
+                        data-meganav-dropdown
+                        style="font-size: 11px;">
                         {% for childlink in link.links %}
                           {% if childlink.links != blank %}
                           {% assign child_index = forloop.index %}
@@ -168,15 +169,15 @@
               <!-- //site-nav -->
             </nav>
             {% comment %} Logo {% endcomment %}
-            <div class="grid__item large--one-tenth medium-down--one-half">
+            <div class="grid__item large--two-twelfths medium-down--one-half">
               {% comment %}
                 Use the uploaded logo from theme settings if enabled.
                 Site name gets precedence with H1 tag on homepage, div on other pages.
               {% endcomment %}
               {% if template.name == 'index' %}
-                <h1 class="site-header__logo large--left" itemscope itemtype="http://schema.org/Organization">
+                <h1 class="site-header__logo large--center" itemscope itemtype="http://schema.org/Organization">
               {% else %}
-                <div class="h1 site-header__logo large--left" itemscope itemtype="http://schema.org/Organization">
+                <div class="h1 site-header__logo large--center" itemscope itemtype="http://schema.org/Organization">
               {% endif %}
                 {% if section.settings.logo_max_width != blank %}
                   {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
@@ -208,7 +209,7 @@
               {% endif %}
             </div>
             {% comment %} Right Side Nav {% endcomment %}
-            <nav class="grid__item large--four-tenths large--text-right medium-down--hide" role="navigation">
+            <nav class="grid__item large--five-twelfths large--text-right medium-down--hide" role="navigation">
               {% comment %}
                 List out your main-menu linklist (default)
 
@@ -308,6 +309,22 @@
                     {% include 'search-bar', search_btn_style: 'btn', search_bar_location: 'search-bar--header' %}
                   </li>
                 {% endcomment %}
+                  <li class="site-nav__item site-nav__expanded-item site-nav__item--compressed">
+                    <a class="site-nav__link site-nav__link--icon" href="https://instagram.com/kweenandco" target="_blank">
+                      <span class="icon-fallback-text">
+                        <span class="icon icon-instagramweb" aria-hidden="true"><img src="https://png.icons8.com/metro/1600/instagram-new.png" height="22" width="23"  style="vertical-align: middle;"></span>
+                      </span>
+                    </a>
+                  </li>
+                 <li class="site-nav__item site-nav__expanded-item site-nav__item--compressed">
+                    <a class="site-nav__link site-nav__link--icon" href="mailto:admin@kween.co" target="_blank">
+                      <span class="icon-fallback-text">
+                        <span class="icon icon-email" aria-hidden="true"><img src="https://png.icons8.com/small/1600/secured-letter.png" height="24" width="25" style="vertical-align: middle;"></span>
+                      </span>
+                    </a>
+                  </li>
+
+
                 {% if shop.customer_accounts_enabled %}
                   <li class="site-nav__item site-nav__expanded-item site-nav__item--compressed">
                     <a class="site-nav__link site-nav__link--icon" href="/account">

@@ -3144,7 +3144,6 @@ theme.initCache = function() {
     $collectionImage        : $('.collection-hero__image'),
 
     $siteNav                : $('.site-nav'),
-    $siteNavMain            : $('.site-nav-main'),
     $siteNavOpen            : $('.site-nav--open'),
     $cartBuggle             : $('.cart-link__bubble'),
     $logoWrapper            : $('.site-header__logo'),
@@ -3231,14 +3230,14 @@ theme.fitNav = function() {
   // Measure children of site nav on load and resize.
   // If wider than parent, switch to mobile nav.
   controlNav();
-  //theme.cache.$window.on('load', controlNav);
+  theme.cache.$window.on('load', controlNav);
   theme.cache.$window.on('resize', theme.debounce(controlNav, 150));
 
   function controlNav() {
     // Subtract 20 from width to account for inline-block spacing
-    var navWidth = theme.cache.$siteNavMain.parent().outerWidth() - 20;
+    var navWidth = theme.cache.$siteNav.parent().outerWidth() - 20;
     var navItemWidth = 0;
-    theme.cache.$siteNavMain.find('> li').each(function() {
+    theme.cache.$siteNav.find('> li').each(function() {
       var $el = $(this);
       // Round up to be safe
       navItemWidth += Math.ceil($(this).width());
@@ -3246,7 +3245,7 @@ theme.fitNav = function() {
 
     if (navItemWidth > navWidth) {
       theme.cache.$siteNav.addClass('site-nav--compress');
-      theme.cache.$siteNav.parent().removeClass('large--four-tenths').addClass('large--one-sixth');
+      theme.cache.$siteNav.parent().removeClass('large--two-thirds').addClass('large--one-sixth');
       theme.cache.$siteNavOpen.addClass('site-nav--open__display');
       theme.cache.$siteNavOpen.parent().removeClass('large--hide');
       theme.cache.$logoWrapper.parent().removeClass('large--one-third').addClass('large--two-thirds');

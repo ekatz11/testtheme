@@ -147,27 +147,27 @@
 @mixin headerFontStack {
   font-family: $headerFontStack;
   font-weight: $headerFontWeight;
-  {% if settings.type_accent_transform %}
+  
     text-transform: uppercase;
-  {% endif %}
+  
 }
 
 @mixin accentFontStack {
   font-family: $accentFontStack;
   font-weight: $accentFontWeight;
   font-style: normal;
-  {% if settings.type_accent_spacing %}
+  
     letter-spacing: 0.1em;
-  {% endif %}
-  {% if settings.type_accent_transform %}
+  
+  
     text-transform: uppercase;
-  {% endif %}
+  
 }
 
 @mixin bodyFontItalic {
-  {% if settings.type_base_italize_titles %}
+  
     font-style: italic;
-  {% endif %}
+  
 }
 
 @mixin visuallyHidden {
@@ -310,44 +310,44 @@ $breakpoint-has-push:  ('medium', 'medium-down', 'large');
 $breakpoint-has-pull:  ('medium', 'medium-down', 'large');
 
 /*================ Color variables ================*/
-$colorPrimary: {{ settings.color_primary }};
-$colorSecondary: {{ settings.color_secondary }};
+$colorPrimary: #66a9a7;
+$colorSecondary: #63acba;
 
 // Button colors
 $colorBtnPrimary: $colorPrimary;
 $colorBtnPrimaryHover: lighten($colorBtnPrimary, 12%);
 $colorBtnPrimaryActive: adaptive-color($colorPrimary, 24%);
-$colorBtnPrimaryText: {{ settings.color_button_text }};
+$colorBtnPrimaryText: #ffffff;
 
 $colorBtnSecondary: $colorSecondary;
 $colorBtnSecondaryHover: lighten($colorBtnSecondary, 10%);
 $colorBtnSecondaryActive: adaptive-color($colorSecondary, 10%);
-$colorBtnSecondaryText: {{ settings.color_button_text }};
+$colorBtnSecondaryText: #ffffff;
 
 // Text link colors
 $colorLink: $colorSecondary;
 $colorLinkHover: $colorPrimary;
 
 // Text colors
-$colorTextBody: {{ settings.color_body_text }};
+$colorTextBody: #222323;
 
 // Heading colors
-$colorHeadings: {{ settings.color_headings }};
+$colorHeadings: #222323;
 
 // Backgrounds
-$colorBody: {{ settings.color_body_bg }};
-$colorProductBackground: {{ settings.color_product_background }};
-$colorInputBg: {{ settings.color_input }};
-$colorNewsletter: {{ settings.color_newsletter }};
+$colorBody: #ffffff;
+$colorProductBackground: #f7f7f7;
+$colorInputBg: #f6f6f6;
+$colorNewsletter: #f6f6f6;
 
 // Border colors
-$colorBorder: {{ settings.color_borders }};
+$colorBorder: #1c1d1d;
 
 // Border size
-$borderWidthHeader: {{ settings.type_header_border_thickness }};
+$borderWidthHeader: 1px;
 
 // Sale tag color
-$colorSaleTag: {{ settings.color_sale_tag }};
+$colorSaleTag: #990000;
 
 // Nav and dropdown link background
 $colorNav: $colorBody;
@@ -367,11 +367,11 @@ $drawerCartWidth: 300px;
 $drawerCartWidthLarge: 400px; // small-up width
 $drawerHeaderHeight: 80px;
 $drawerCartFooterHeight: 130px; // default, overwritten by JS
-$colorDrawers: {{ settings.color_drawer_background }};
-$colorDrawerBorder: {{ settings.color_drawer_border }};
-$colorDrawerText: {{ settings.color_drawer_text }};
-$colorDrawerButton: {{ settings.color_drawer_button }};
-$colorDrawerButtonText: {{ settings.color_drawer_button_text }};
+$colorDrawers: #1c1d1d;
+$colorDrawerBorder: #343535;
+$colorDrawerText: #ffffff;
+$colorDrawerButton: #66a9a7;
+$colorDrawerButtonText: #ffffff;
 $drawerTransition: 'all 0.35s cubic-bezier(0.46, 0.01 , 0.32, 1)';
 
 // Sizing variables
@@ -396,9 +396,7 @@ $collageImageLarge: 520px;
 $collageImageMedium: 310px;
 $collageImageSmall: 230px;
 
-{% if settings.product_vendor_enable %}
-  $collageImageLarge: 544px;
-{% endif %}
+
 
 // Collection Collage Grid
 // These heights are used to determine the row height for the
@@ -415,51 +413,29 @@ $color-blankstate: rgba($colorTextBody, 0.35);
 $color-blankstate-background: rgba($colorTextBody, 0.10);
 
 /*================ Typography ================*/
-{% if settings.type_base_family contains 'Google' %}
-  {% assign type_base_parts = settings.type_base_family | split: '_' %}
-  {% assign type_base_name = type_base_parts[1] %}
-  {% capture base_family %}"{{ type_base_name | split: ':' | first | replace: '+', ' ' }}"{% if type_base_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
-{% else %}
-  {% assign base_family = settings.type_base_family %}
-{% endif %}
 
-{% if settings.type_header_family contains 'Google' %}
-  {% assign type_header_parts = settings.type_header_family | split: '_' %}
-  {% assign type_header_name = type_header_parts[1] %}
-  {% capture header_family %}"{{ type_header_name | split: ':' | first | replace: '+', ' ' }}"{% if type_header_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
-  {% assign header_weight = type_header_parts[2] | split: ',' %}
-{% else %}
-  {% assign header_family = settings.type_header_family %}
-  {% assign header_weight = 400 %}
-{% endif %}
 
-{% if settings.type_accent_family contains 'Google' %}
-  {% assign type_accent_parts = settings.type_accent_family | split: '_' %}
-  {% assign type_accent_name = type_accent_parts[1] %}
-  {% capture accent_family %}"{{ type_accent_name | split: ':' | first | replace: '+', ' ' }}"{% if type_accent_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
-  {% assign accent_weight = type_accent_parts[2] | split: ',' %}
-{% else %}
-  {% assign accent_family = settings.type_accent_family %}
-  {% assign accent_weight = 700 %}
-{% endif %}
 
-$headerFontStack: {{ header_family }};
-$headerFontWeight: {{ header_weight }};
-$headerBaseFontSize: {{ settings.type_header_base_size }};
 
-$bodyFontStack: {{ base_family }};
-$baseFontSize: {{ settings.type_base_size }}; // Henseforth known as 1em
 
-$accentFontStack: {{ accent_family }};
-$accentFontWeight: {{ accent_weight }};
+
+$headerFontStack: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+$headerFontWeight: 400;
+$headerBaseFontSize: 30px;
+
+$bodyFontStack: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+$baseFontSize: 16px; // Henseforth known as 1em
+
+$accentFontStack: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+$accentFontWeight: 400;
 
 @font-face {
   font-family: 'icons';
-  src: url('{{ "icons.eot" | asset_url }}');
-  src: url('{{ "icons.eot" | asset_url }}#iefix') format("embedded-opentype"),
-       url('{{ "icons.woff" | asset_url }}') format("woff"),
-       url('{{ "icons.ttf" | asset_url }}') format("truetype"),
-       url('{{ "icons.svg" | asset_url }}#timber-icons') format("svg");
+  src: url('//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/icons.eot?14217626912083877153');
+  src: url('//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/icons.eot?14217626912083877153#iefix') format("embedded-opentype"),
+       url('//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/icons.woff?14217626912083877153') format("woff"),
+       url('//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/icons.ttf?14217626912083877153') format("truetype"),
+       url('//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/icons.svg?14217626912083877153#timber-icons') format("svg");
   font-weight: normal;
   font-style: normal;
 };
@@ -1008,9 +984,9 @@ h6 {
 }
 
 h3, h4, h5, h6 {
-  {% if settings.type_accent_subheadings %}
+  
     @include accentFontStack;
-  {% endif %}
+  
 }
 
 .h1 { @extend h1; }
@@ -1044,21 +1020,21 @@ th,
     content: '';
     display: block;
     margin: 20px auto;
-    border-bottom: 1px {{ settings.color_borders }} solid;
+    border-bottom: 1px #1c1d1d solid;
     max-width: 50px;
   }
 
   h3 {
-    {% if settings.type_accent_subheadings %}
+    
       @include accentFontStack;
-    {% endif %}
+    
     text-align: center;
   }
 
   h4, h5, h6 {
-    {% if settings.type_accent_subheadings %}
+    
       @include accentFontStack;
-    {% endif %}
+    
   }
 }
 
@@ -2252,11 +2228,9 @@ $shareCountBg: $colorBody;
   }
 
   .hero__subtitle {
-    {% if settings.type_accent_subheadings %}
+    
       @include accentFontStack;
-    {% else %}
-      @include headerFontStack;
-    {% endif %}
+    
     margin-bottom: 15px;
   }
 
@@ -2342,7 +2316,7 @@ $slick-opacity-not-active: 0.25;
 
 // Only called once so make sure proper file is grabbed
 @function slick-image-url($url) {
-  @return url({{ "ajax-loader.gif" | asset_url }});
+  @return url(//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/ajax-loader.gif?14217626912083877153);
 }
 
 // Unused intentionally
@@ -2809,7 +2783,7 @@ $slick-opacity-not-active: 0.25;
 .site-nav__link {
   @include accentFontStack;
   @include transition(color 0.2s);
-  font-size: em(14px);
+  font-size: 10.5px;
 }
 
 .site-nav--has-dropdown {
@@ -3971,7 +3945,7 @@ button.mfp-arrow {
   width: 100%;
 
   @if $passwordPageUseBgImage {
-    background-image: url({{ 'password-page-background.jpg' | asset_url }});
+    background-image: url(//cdn.shopify.com/s/files/1/0012/4567/5583/t/2/assets/password-page-background.jpg?14217626912083877153);
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;

@@ -216,7 +216,7 @@ theme.Sections.prototype = _.assignIn({}, theme.Sections.prototype, {
  */
 
 theme.Currency = (function() {
-  var moneyFormat = '${{amount}}';
+  var moneyFormat = '$';
 
   function formatMoney(cents, format) {
     if (typeof cents === 'string') {
@@ -601,7 +601,7 @@ slate.Variants = (function() {
 
 
 /* ================ MODULES ================ */
-{% if settings.cart_type == 'drawer' %}
+
 /*!
 handlebars v1.3.0
 
@@ -801,7 +801,7 @@ var ajaxCart = (function(module, $) {
       addToCartSelector: 'input[type="submit"]',
       cartCountSelector: null,
       cartCostSelector: null,
-      moneyFormat: '${{amount}}',
+      moneyFormat: '$',
       disableAjaxCart: false,
       enableQtySelectors: true
     };
@@ -1185,7 +1185,7 @@ var ajaxCart = (function(module, $) {
   return module;
 })(ajaxCart || {}, jQuery);
 
-{% endif %}
+
 /*============================================================================
   Money Format
   - Shopify.format money is defined in option_selection.js.
@@ -3231,7 +3231,7 @@ theme.fitNav = function() {
   // Measure children of site nav on load and resize.
   // If wider than parent, switch to mobile nav.
   controlNav();
-  //theme.cache.$window.on('load', controlNav);
+  theme.cache.$window.on('load', controlNav);
   theme.cache.$window.on('resize', theme.debounce(controlNav, 150));
 
   function controlNav() {
@@ -3246,7 +3246,7 @@ theme.fitNav = function() {
 
     if (navItemWidth > navWidth) {
       theme.cache.$siteNav.addClass('site-nav--compress');
-      theme.cache.$siteNav.parent().removeClass('large--four-tenths').addClass('large--one-sixth');
+      theme.cache.$siteNav.parent().removeClass('large--five-twelfths').addClass('large--one-sixth');
       theme.cache.$siteNavOpen.addClass('site-nav--open__display');
       theme.cache.$siteNavOpen.parent().removeClass('large--hide');
       theme.cache.$logoWrapper.parent().removeClass('large--one-third').addClass('large--two-thirds');

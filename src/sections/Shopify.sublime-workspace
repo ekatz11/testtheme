@@ -1,0 +1,356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"large--one",
+				"large--one-third"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "Package Control: instal",
+		"selected_items":
+		[
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 64.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/config",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/layout",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/config",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/layout",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles"
+	],
+	"file_history":
+	[
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/sections/header.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets/theme.js",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/theme.scss",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/timber.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/styles/timber.scss",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/dist/layout/theme.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets/timber.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets/theme.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/config/settings_schema.json",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/theme.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/timber.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/timber.scss",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/assets/theme.scss",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/layout/theme.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/theme.js.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/sections/footer.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/dist/assets/theme.scss.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/email-icon.png",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/node_modules/weinre/web/client/inspector.css",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/assets/icons.json",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/node_modules/serve-index/public/style.css",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/config.yml",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/config/settings_data.json",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/dist/snippets/ajax-cart-template.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/layout/theme.liquid",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/node_modules/css-select/lib/pseudos.js",
+		"/C/Users/KF/Documents/KweenFoods/if(typeof Checkout === 'object'){",
+		"/C/Users/KF/Documents/KweenFoods/parse_insta_IDs.py",
+		"/C/Users/KF/Downloads/insta1.html",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/package.json",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/dist/config.yml",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/package.json",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/src/config.yml",
+		"/C/Users/KF/Documents/KweenFoods/theme_export__avokween-com-brooklyn__15JUL2018-0138am/node_modules/@shopify/slate/README.md",
+		"/C/Users/KF/Downloads/Ali Bonar 🥑👑 (@avokween) • Instagram photos and videos.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"C:\\Users\\KF\\Documents\\KweenFoods\\theme_export__avokween-com-brooklyn__15JUL2018-0138am/src",
+			"C:\\Users\\KF\\Documents\\KweenFoods\\theme_export__avokween-com-brooklyn__15JUL2018-0138am"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".site-nav",
+			"/*=",
+			"12px",
+			"vertical-align: top",
+			".grid__item",
+			"five-twelfths",
+			"four-tenths",
+			".site-header .grid--table",
+			"wrapper ",
+			"wrapper",
+			"__link",
+			"em",
+			"12px",
+			"__link",
+			"em(12",
+			"12px",
+			"site-nav",
+			"site-nav ",
+			"site-nav",
+			".site-nav",
+			".site-nav__link",
+			".site-nav",
+			"a.site-na",
+			"site-nav__link",
+			"px",
+			"accent",
+			"accent_family",
+			"accentFontStack",
+			"site-nav__link",
+			"em(",
+			"site-nav",
+			"site-nav ",
+			"site-nav",
+			"site-nav-main",
+			"site-nav",
+			".site-nav",
+			".site-nav ",
+			".site-nav",
+			"site-nav-main",
+			"main",
+			"site-nav__link",
+			"95%",
+			"90%",
+			"90",
+			"90%",
+			"site-nav__item",
+			"em(11px)",
+			"site-nav__item",
+			"site-nav__link",
+			");",
+			".site-nav__link",
+			"} ",
+			"family",
+			"Google_Droid+Sans_400_sans",
+			"google",
+			"Sans-serif | google",
+			"fontstack",
+			"FontStack",
+			"font-family",
+			"src=",
+			"//cdn.shopify.com/",
+			"=\"//",
+			"/assets/",
+			"instagram",
+			"e907",
+			"icon-instagram",
+			"instagram",
+			"icon-customer",
+			"montserrat",
+			"font",
+			"ul",
+			"0 0 15 20",
+			"0 0 15px 20px",
+			"float: left !important",
+			"@media only screen and (min-width: 769px)\n.large--",
+			"site-nav",
+			"site-nav ",
+			"main",
+			"sitenavmain",
+			"site-nav",
+			"site-nav ",
+			"site-nav",
+			"siteNav",
+			"sitenav",
+			"$siteNav",
+			"navigation",
+			"role",
+			"navigation",
+			"large--one-sixth",
+			"wrapper",
+			"srapper",
+			"logo",
+			"wrapper",
+			"sitenav",
+			"navItemWidth",
+			"width: 95%",
+			"width: 95",
+			"fitNav",
+			"header",
+			"linklists",
+			"linklists[section.settings.main_menu_link_list].links",
+			"linklist",
+			"main_menu",
+			"righthead",
+			"right-",
+			"right",
+			"menu",
+			"right-header-menu",
+			"main-menu",
+			"menu_link_list",
+			"font-size",
+			"body",
+			"body, input, textarea, button, select",
+			"medium-down--one-half",
+			"max-width",
+			"right ",
+			"right",
+			"left",
+			"class",
+			"grid",
+			"large--one-sixth",
+			"large--one-sixth one-quarter",
+			" grid--table",
+			"grid--full ",
+			"grid--full grid--table",
+			"endcomment",
+			"{% endcom",
+			"{% endcome"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\KF\\Documents\\KweenFoods\\theme_export__avokween-com-brooklyn__15JUL2018-0138am"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 363.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
